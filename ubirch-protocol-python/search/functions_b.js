@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['verfiy_5fsignature_71',['verfiy_signature',['../classubirch_1_1ubirch__protocol_1_1_protocol.html#a8aeb663df0ac77d634adf1fc4188bf99',1,'ubirch::ubirch_protocol::Protocol']]],
-  ['verify_72',['verify',['../classubirch_1_1ubirch__api_1_1_a_p_i.html#af115477255e82a356fcbc71389d21b15',1,'ubirch::ubirch_api::API']]]
+  ['unpack_5fupp_87',['unpack_upp',['../classubirch_1_1ubirch__protocol_1_1_protocol.html#a51f1e148e74ff11e0ca673ebc801f759',1,'ubirch::ubirch_protocol::Protocol']]],
+  ['upp_5fmsgpack_5fsplit_5fsignature_88',['upp_msgpack_split_signature',['../classubirch_1_1ubirch__protocol_1_1_protocol.html#a090ba826e353a22f9930d723da0b8853',1,'ubirch::ubirch_protocol::Protocol']]]
 ];

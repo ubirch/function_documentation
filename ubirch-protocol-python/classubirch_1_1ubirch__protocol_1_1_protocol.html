@@ -98,10 +98,9 @@ $(function() {
 <div class="title">Protocol Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>Ubirch <a class="el" href="classubirch_1_1ubirch__protocol_1_1_protocol.html" title="Ubirch Protocol: handle signatures and UPP&#39;s and create message objects.">Protocol</a>: handle signatures and UPP's and create message objects.  
- <a href="classubirch_1_1ubirch__protocol_1_1_protocol.html#details">More...</a></p>
-<div class="dynheader">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Ubirch <a class="el" href="classubirch_1_1ubirch__protocol_1_1_protocol.html" title="Ubirch Protocol: handle signatures and UPP&#39;s and create message objects.">Protocol</a>: handle signatures and UPP's and create message objects. </p>
+</div><div class="dynheader">
 Inheritance diagram for Protocol:</div>
 <div class="dyncontent">
  <div class="center">
@@ -137,7 +136,7 @@ Inheritance diagram for Protocol:</div>
 <p>Initialize the protocol. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">signatures</td><td>previously known signatures </td></tr>
+    <tr><td class="paramname">signatures</td><td>Previously known signatures </td></tr>
   </table>
   </dd>
 </dl>
@@ -145,6 +144,164 @@ Inheritance diagram for Protocol:</div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="affe9a8b92ed331686f902d73766c3321"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affe9a8b92ed331686f902d73766c3321">&#9670;&nbsp;</a></span>_hash()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"> bytes _hash </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bytes&#160;</td>
+          <td class="paramname"><em>message</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Hash the message before signing. </p>
+<p>Override this method if a different hash algorithm is used. Default is SHA512. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">message</td><td>The message bytes </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The digest in bytes </dd></dl>
+
+</div>
+</div>
+<a id="a8833709ec978f0a8e0abf22c8c9e1274"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8833709ec978f0a8e0abf22c8c9e1274">&#9670;&nbsp;</a></span>_sign()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"> bytes _sign </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UUID&#160;</td>
+          <td class="paramname"><em>uuid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bytes&#160;</td>
+          <td class="paramname"><em>message</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sign the request when finished. </p>
+<p>IMPORTANT: This function needs to be implemented with the Keystore of choice and its .find_signing_key() and .sign() functions</p>
+<p>This function also takes care of the hashing, before signing, depending on the key type. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">uuid</td><td>The uuid of the sender to identify the correct key pair </td></tr>
+    <tr><td class="paramname">message</td><td>The bytes to sign </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>NotImplementedError </dd></dl>
+
+</div>
+</div>
+<a id="a870696bebfb47dc9553db2f3944949da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a870696bebfb47dc9553db2f3944949da">&#9670;&nbsp;</a></span>_verify()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">def _verify </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UUID&#160;</td>
+          <td class="paramname"><em>uuid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bytes&#160;</td>
+          <td class="paramname"><em>message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bytes&#160;</td>
+          <td class="paramname"><em>signature</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Verify the message. </p>
+<p>IMPORTANT: This function needs to be implemented with the Keystore of choice and its .find_verifying_key() and .verify() functions</p>
+<p>Throws exception if not verifiable. This function also takes care of the hashing, before verifying, depending on the key type. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">uuid</td><td>The uuid of the sender to identify the correct key pair </td></tr>
+    <tr><td class="paramname">message</td><td>The message bytes to verify </td></tr>
+    <tr><td class="paramname">signature</td><td>The signature to use for verification </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>NotImplementedError </dd></dl>
+
+</div>
+</div>
 <a id="a04e6dbef9ea8bd7d92cb39d028328002"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a04e6dbef9ea8bd7d92cb39d028328002">&#9670;&nbsp;</a></span>get_saved_signatures()</h2>
 
@@ -162,7 +319,7 @@ Inheritance diagram for Protocol:</div>
 </div><div class="memdoc">
 
 <p>Get the saved signatures to store them persistently. </p>
-<dl class="section return"><dt>Returns</dt><dd>a dictionary of signatures (uuid -&gt; bytes) </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A dictionary of signatures (uuid -&gt; bytes) </dd></dl>
 
 </div>
 </div>
@@ -201,12 +358,12 @@ Inheritance diagram for Protocol:</div>
 <p>Get the index of a given target field for a UPP with the given version byte Throws a ValueError if the version byte (lower four bits) is invalid. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">versionByte</td><td>the first byte of an unpacked upp (first element of the list) </td></tr>
-    <tr><td class="paramname">targetField</td><td>one off "UNPACKED_UPP_*" </td></tr>
+    <tr><td class="paramname">versionByte</td><td>The first byte of an unpacked upp (first element of the list) </td></tr>
+    <tr><td class="paramname">targetField</td><td>One off "UNPACKED_UPP_*" </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the index of the field on success </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The index of the field on success </dd></dl>
 
 </div>
 </div>
@@ -251,13 +408,13 @@ Inheritance diagram for Protocol:</div>
 <p>Create a new chained ubirch-protocol message. </p>
 <p>Stores the context, the last signature, to be included in the next message. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">uuid</td><td>the uuid of the device that sends the message, part of the envelope </td></tr>
-    <tr><td class="paramname">type</td><td>a hint of the type of message sent (0-255) </td></tr>
-    <tr><td class="paramname">payload</td><td>the actual message payload </td></tr>
+    <tr><td class="paramname">uuid</td><td>The uuid of the device that sends the message, part of the envelope </td></tr>
+    <tr><td class="paramname">type</td><td>A hint of the type of message sent (0-255) </td></tr>
+    <tr><td class="paramname">payload</td><td>The actual message payload </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the encoded and signed message </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The encoded and signed message </dd></dl>
 
 </div>
 </div>
@@ -308,14 +465,14 @@ Inheritance diagram for Protocol:</div>
 <p>Create a new signed ubirch-protocol message. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">uuid</td><td>the uuid of the device that sends the message, part of the envelope </td></tr>
-    <tr><td class="paramname">type</td><td>a hint of the type of message sent (0-255) </td></tr>
-    <tr><td class="paramname">payload</td><td>the actual message payload </td></tr>
-    <tr><td class="paramname">save_signature</td><td>save the signature of the created message so the next chained message contains it </td></tr>
+    <tr><td class="paramname">uuid</td><td>The uuid of the device that sends the message, part of the envelope </td></tr>
+    <tr><td class="paramname">type</td><td>A hint of the type of message sent (0-255) </td></tr>
+    <tr><td class="paramname">payload</td><td>The actual message payload </td></tr>
+    <tr><td class="paramname">save_signature</td><td>Save the signature of the created message so the next chained message contains it </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the encoded and signed message </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The encoded and signed message </dd></dl>
 
 </div>
 </div>
@@ -348,7 +505,7 @@ Inheritance diagram for Protocol:</div>
 <p>Reset the last saved signature for this UUID. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">uuid</td><td>the UUID to reset </td></tr>
+    <tr><td class="paramname">uuid</td><td>The UUID to reset </td></tr>
   </table>
   </dd>
 </dl>
@@ -384,7 +541,7 @@ Inheritance diagram for Protocol:</div>
 <p>Set known signatures from devices we have talked to. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">signatures</td><td>the saved signatures as a dictionary (uuid -&gt; bytes) </td></tr>
+    <tr><td class="paramname">signatures</td><td>The saved signatures as a dictionary (uuid -&gt; bytes) </td></tr>
   </table>
   </dd>
 </dl>
@@ -417,14 +574,14 @@ Inheritance diagram for Protocol:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Unpack a UPP (msgpack) Throws an exception if the UPP can't be unpacked Returns the unpacked upp as a list. </p>
+<p>Unpack a UPP (msgpack) Throws an exception if the UPP can't be unpacked Returns The unpacked upp as a list. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">msgpackUPP</td><td>the msgpack encoded message </td></tr>
+    <tr><td class="paramname">msgpackUPP</td><td>The msgpack encoded message </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the unpacked message </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The unpacked message </dd></dl>
 
 </div>
 </div>
@@ -457,11 +614,11 @@ Inheritance diagram for Protocol:</div>
 <p>Separate the signature from the msgpack. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">msgpackUPP</td><td>the msgpack encoded upp </td></tr>
+    <tr><td class="paramname">msgpackUPP</td><td>The msgpack encoded upp </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>a tuple consisting of the message without the signature and the signature </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A tuple consisting of the message without the signature and the signature </dd></dl>
 
 </div>
 </div>
@@ -500,17 +657,17 @@ Inheritance diagram for Protocol:</div>
 <p>Verify the integrity of the message and decode the contents Raises an value error when the message is too short. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">uuid</td><td>the uuid of the sender of the message </td></tr>
-    <tr><td class="paramname">msgpackUPP</td><td>the msgpack encoded message </td></tr>
+    <tr><td class="paramname">uuid</td><td>The uuid of the sender of the message </td></tr>
+    <tr><td class="paramname">msgpackUPP</td><td>The msgpack encoded message </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the decoded message </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The decoded message </dd></dl>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/github/workspace/ubirch/ubirch_protocol.py</li>
+<li>/github/workspace/ubirch/<a class="el" href="ubirch__protocol_8py.html">ubirch_protocol.py</a></li>
 </ul>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.9.3-->
