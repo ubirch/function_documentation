@@ -88,25 +88,68 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>ubirch</b></li><li class="navelem"><b>ubirch_api</b></li><li class="navelem"><a class="el" href="classubirch_1_1ubirch__api_1_1_a_p_i.html">API</a></li>  </ul>
+<li class="navelem"><b>ubirch_api</b></li><li class="navelem"><a class="el" href="classubirch__api_1_1_a_p_i.html">API</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="classubirch_1_1ubirch__api_1_1_a_p_i-members.html">List of all members</a>  </div>
+<a href="classubirch__api_1_1_a_p_i-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">API Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>Ubirch <a class="el" href="classubirch_1_1ubirch__api_1_1_a_p_i.html" title="Ubirch API accessor methods.">API</a> accessor methods.  
- <a href="classubirch_1_1ubirch__api_1_1_a_p_i.html#details">More...</a></p>
-<div class="dynheader">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Ubirch <a class="el" href="classubirch__api_1_1_a_p_i.html" title="Ubirch API accessor methods.">API</a> accessor methods. </p>
+</div><div class="dynheader">
 Inheritance diagram for API:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="classubirch_1_1ubirch__api_1_1_a_p_i.png" alt=""/>
+  <img src="classubirch__api_1_1_a_p_i.png" alt=""/>
  </div></div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a01f260b0584761d7c30e3b008dba5176"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01f260b0584761d7c30e3b008dba5176">&#9670;&nbsp;</a></span>__init__()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> None __init__ </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>env</em> = <code>&quot;demo&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>debug</em> = <code>False</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialize the <a class="el" href="classubirch__api_1_1_a_p_i.html" title="Ubirch API accessor methods.">API</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">env</td><td>Can be one of [prod, demo, dev] </td></tr>
+    <tr><td class="paramname">debug</td><td>Print debug output? </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a87ebe1d772609f5831bae00bc704e888"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a87ebe1d772609f5831bae00bc704e888">&#9670;&nbsp;</a></span>deregister_identity()</h2>
@@ -137,11 +180,42 @@ Inheritance diagram for API:</div>
 <p>De-register an identity at the backend. </p>
 <p>Deletes the public key. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">key_deregistration</td><td>the public key signed </td></tr>
+    <tr><td class="paramname">key_deregistration</td><td>The public key signed </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the response from the server </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The response from the server </dd></dl>
+
+</div>
+</div>
+<a id="a50ac935f811739cb2c4141e0631f75b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50ac935f811739cb2c4141e0631f75b7">&#9670;&nbsp;</a></span>get_trusted_identities_json()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> Response get_trusted_identities_json </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">dict&#160;</td>
+          <td class="paramname"><em>get_trusted</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the trusted identities as a list in JSON format. </p>
+<dl class="section return"><dt>Returns</dt><dd>The response from the server </dd></dl>
 
 </div>
 </div>
@@ -172,7 +246,7 @@ Inheritance diagram for API:</div>
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">service</td><td>has to be "key", "niomon", "verify" or "data" </td></tr>
+    <tr><td class="paramname">service</td><td>Can be one of [prod, demo, dev] </td></tr>
   </table>
   </dd>
 </dl>
@@ -209,11 +283,11 @@ Inheritance diagram for API:</div>
 <p>Check if this identity is registered with the backend. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">uuid</td><td>the UUID of the identity to check </td></tr>
+    <tr><td class="paramname">uuid</td><td>The UUID of the identity to check </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>true if the identity exists </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>True If the identity exists </dd></dl>
 
 </div>
 </div>
@@ -246,11 +320,11 @@ Inheritance diagram for API:</div>
 <p>Register an identity with the backend. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">key_registration</td><td>the key registration data </td></tr>
+    <tr><td class="paramname">key_registration</td><td>The key registration data </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the response from the server </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The response from the server </dd></dl>
 
 </div>
 </div>
@@ -289,12 +363,12 @@ Inheritance diagram for API:</div>
 <p>Send data to the ubirch authentication service (Niomon). </p>
 <p>Requires encoding before sending. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">uuid</td><td>the sender's UUID </td></tr>
-    <tr><td class="paramname">data</td><td>the msgpack or JSON encoded data to send </td></tr>
+    <tr><td class="paramname">uuid</td><td>The sender's UUID </td></tr>
+    <tr><td class="paramname">data</td><td>The msgpack or JSON encoded data to send </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the response from the server </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The response from the server </dd></dl>
 
 </div>
 </div>
@@ -333,12 +407,12 @@ Inheritance diagram for API:</div>
 <p>Send data to the ubirch data service. </p>
 <p>Requires encoding before sending. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">uuid</td><td>the sender's UUID </td></tr>
-    <tr><td class="paramname">data</td><td>the msgpack or JSON encoded data to send </td></tr>
+    <tr><td class="paramname">uuid</td><td>The sender's UUID </td></tr>
+    <tr><td class="paramname">data</td><td>The msgpack or JSON encoded data to send </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the response from the server </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The response from the server </dd></dl>
 
 </div>
 </div>
@@ -375,11 +449,42 @@ Inheritance diagram for API:</div>
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">uuid</td><td>the UUID of the authentification to add </td></tr>
-    <tr><td class="paramname">auth</td><td>the auth key / password of the ubirch thing </td></tr>
+    <tr><td class="paramname">uuid</td><td>The UUID of the authentication to add </td></tr>
+    <tr><td class="paramname">auth</td><td>The auth key / password of the ubirch 'thing' </td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a7533482bdfa535b9ac3831e8d5d0686a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7533482bdfa535b9ac3831e8d5d0686a">&#9670;&nbsp;</a></span>trust_identity_json()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> Response trust_identity_json </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">dict&#160;</td>
+          <td class="paramname"><em>signed_trust</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Trust a new identity. </p>
+<dl class="section return"><dt>Returns</dt><dd>The response from the server </dd></dl>
 
 </div>
 </div>
@@ -418,17 +523,17 @@ Inheritance diagram for API:</div>
 <p>Verify a given hash with the ubirch backend. </p>
 <p>Returns all available verification data. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">data</td><td>the hash of the message to verify </td></tr>
-    <tr><td class="paramname">quick</td><td>only run quick check to verify that the hash has been stored in backend </td></tr>
+    <tr><td class="paramname">data</td><td>The hash of the message to verify </td></tr>
+    <tr><td class="paramname">quick</td><td>Only run quick check to verify that the hash has been stored in backend </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>if the verification was successful and the data related to it </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>If the verification was successful and the data related to it </dd></dl>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/github/workspace/ubirch/ubirch_api.py</li>
+<li>/github/workspace/ubirch/<a class="el" href="ubirch__api_8py.html">ubirch_api.py</a></li>
 </ul>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.9.3-->
