@@ -4,6 +4,6 @@ var searchData=
   ['_5ffind_5fcert_59',['_find_cert',['../classubirch_1_1ubirch__ks_1_1_key_store.html#ab99d45a1b1d1ab017a7a268431ce372b',1,'ubirch::ubirch_ks::KeyStore']]],
   ['_5fhash_60',['_hash',['../classubirch_1_1ubirch__protocol_1_1_protocol.html#affe9a8b92ed331686f902d73766c3321',1,'ubirch::ubirch_protocol::Protocol']]],
   ['_5fload_5fkeys_61',['_load_keys',['../classubirch_1_1ubirch__ks_1_1_key_store.html#aabc0756ac81025fc09d657685e48dffa',1,'ubirch::ubirch_ks::KeyStore']]],
-  ['_5fsign_62',['_sign',['../classubirch_1_1ubirch__protocol_1_1_protocol.html#a8833709ec978f0a8e0abf22c8c9e1274',1,'ubirch::ubirch_protocol::Protocol']]],
-  ['_5fverify_63',['_verify',['../classubirch_1_1ubirch__protocol_1_1_protocol.html#a870696bebfb47dc9553db2f3944949da',1,'ubirch::ubirch_protocol::Protocol']]]
+  ['_5fsign_62',['_sign',['../classubirch_1_1ubirch__protocol_1_1_protocol.html#a8833709ec978f0a8e0abf22c8c9e1274',1,'ubirch.ubirch_protocol.Protocol._sign()'],['../class_step_by_step_example_1_1_proto.html#a5424233c477f4853d876035180cc6e8d',1,'StepByStepExample.Proto._sign()']]],
+  ['_5fverify_63',['_verify',['../classubirch_1_1ubirch__protocol_1_1_protocol.html#a870696bebfb47dc9553db2f3944949da',1,'ubirch.ubirch_protocol.Protocol._verify()'],['../class_step_by_step_example_1_1_proto.html#a870696bebfb47dc9553db2f3944949da',1,'StepByStepExample.Proto._verify()']]]
 ];
