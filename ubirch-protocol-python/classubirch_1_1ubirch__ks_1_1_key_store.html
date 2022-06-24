@@ -99,7 +99,8 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Assists at handling keys relevant for the ubirch protocol. </p>
+<div class="textblock"><p>Handles your signing and verifying keys. </p>
+<p>Meaning it generates, stores, loads and finds your keys. </p>
 </div><div class="dynheader">
 Inheritance diagram for KeyStore:</div>
 <div class="dyncontent">
@@ -139,11 +140,11 @@ Inheritance diagram for KeyStore:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Initialize the <a class="el" href="classubirch_1_1ubirch__ks_1_1_key_store.html" title="Assists at handling keys relevant for the ubirch protocol.">KeyStore</a>. </p>
+<p>Initialize the <a class="el" href="classubirch_1_1ubirch__ks_1_1_key_store.html" title="Handles your signing and verifying keys.">KeyStore</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">keystore_file</td><td>The name of the keystore file </td></tr>
-    <tr><td class="paramname">password</td><td>The password of the keystore file. Please use a strong password like generated here: <a href="https://passwords-generator.org/">https://passwords-generator.org/</a> </td></tr>
+    <tr><td class="paramname">password</td><td>The password of the keystore file. A strong password should be used. </td></tr>
   </table>
   </dd>
 </dl>
@@ -253,7 +254,7 @@ Inheritance diagram for KeyStore:</div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">uuid</td><td>The UUID of the device </td></tr>
-    <tr><td class="paramname">sk</td><td>A ed25519.SigningKey like generated from ed25519.create_keypair() </td></tr>
+    <tr><td class="paramname">sk</td><td>A <code>ed25519.SigningKey</code> like generated from <code>ed25519.create_keypair()</code> </td></tr>
   </table>
   </dd>
 </dl>
@@ -303,8 +304,8 @@ Inheritance diagram for KeyStore:</div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">uuid</td><td>The UUID of the device </td></tr>
-    <tr><td class="paramname">vk</td><td>A ed25519.VerifyingKey like generated from ed25519.create_keypair() </td></tr>
-    <tr><td class="paramname">sk</td><td>A ed25519.SigningKey like generated from ed25519.create_keypair() </td></tr>
+    <tr><td class="paramname">vk</td><td>A <code>ed25519.VerifyingKey</code> like generated from <code>ed25519.create_keypair()</code> </td></tr>
+    <tr><td class="paramname">sk</td><td>A <code>ed25519.SigningKey</code> like generated from <code>ed25519.create_keypair()</code> </td></tr>
   </table>
   </dd>
 </dl>
@@ -348,7 +349,7 @@ Inheritance diagram for KeyStore:</div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">uuid</td><td>The UUID of the device </td></tr>
-    <tr><td class="paramname">sk</td><td>A ed25519.SigningKey like generated from ed25519.create_keypair() </td></tr>
+    <tr><td class="paramname">sk</td><td>A <code>ed25519.SigningKey</code> like generated from <code>ed25519.create_keypair()</code> </td></tr>
   </table>
   </dd>
 </dl>
@@ -391,7 +392,7 @@ Inheritance diagram for KeyStore:</div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">uuid</td><td>The UUID of the device </td></tr>
-    <tr><td class="paramname">vk</td><td>A ed25519.VerifyingKey like generated from ed25519.create_keypair() </td></tr>
+    <tr><td class="paramname">vk</td><td>A <code>ed25519.VerifyingKey</code> like generated from <code>ed25519.create_keypair()</code> </td></tr>
   </table>
   </dd>
 </dl>
