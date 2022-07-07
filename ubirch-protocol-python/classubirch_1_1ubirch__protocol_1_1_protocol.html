@@ -233,7 +233,7 @@ Inheritance diagram for Protocol:</div>
 </div><div class="memdoc">
 
 <p>Sign the request when finished. </p>
-<p>IMPORTANT: This function needs to be implemented with the Keystore of choice and its .find_signing_key() and .sign() functions</p>
+<dl class="section note"><dt>Note</dt><dd>IMPORTANT: This function needs to be implemented with the Keystore of choice and its .find_signing_key() and .sign() functions</dd></dl>
 <p>This function also takes care of the hashing, before signing, depending on the key type. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">uuid</td><td>The uuid of the sender to identify the correct key pair </td></tr>
@@ -294,7 +294,7 @@ Inheritance diagram for Protocol:</div>
 </div><div class="memdoc">
 
 <p>Verify the message. </p>
-<p>IMPORTANT: This function needs to be implemented with the Keystore of choice and its .find_verifying_key() and .verify() functions</p>
+<dl class="section note"><dt>Note</dt><dd>IMPORTANT: This function needs to be implemented with the Keystore of choice and its .find_verifying_key() and .verify() functions</dd></dl>
 <p>Throws exception if not verifiable. This function also takes care of the hashing, before verifying, depending on the key type. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">uuid</td><td>The uuid of the sender to identify the correct key pair </td></tr>
@@ -637,6 +637,50 @@ Inheritance diagram for Protocol:</div>
       <table class="memname">
         <tr>
           <td class="memname"> bool verfiy_signature </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UUID&#160;</td>
+          <td class="paramname"><em>uuid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bytes&#160;</td>
+          <td class="paramname"><em>msgpackUPP</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code><a class="el" href="classubirch_1_1ubirch__protocol_1_1_protocol.html#a248111bca70ba449e4cae3cba163afc2" title="Verify the integrity of the message and decode the contents Raises an value error when the message is...">verify_signature()</a></code> with typo for backwards compatability </p>
+<p>Verify the integrity of the message and decode the contents Raises an value error when the message is too short </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">uuid</td><td>The uuid of the sender of the message </td></tr>
+    <tr><td class="paramname">msgpackUPP</td><td>The msgpack encoded message </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The decoded message </dd></dl>
+
+</div>
+</div>
+<a id="a248111bca70ba449e4cae3cba163afc2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a248111bca70ba449e4cae3cba163afc2">&#9670;&nbsp;</a></span>verify_signature()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> bool verify_signature </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname"><em>self</em>, </td>

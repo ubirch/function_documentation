@@ -149,7 +149,7 @@ Inheritance diagram for Proto:</div>
 </div><div class="memdoc">
 
 <p>Sign the request when finished. </p>
-<p>IMPORTANT: This function needs to be implemented with the Keystore of choice and its .find_signing_key() and .sign() functions</p>
+<dl class="section note"><dt>Note</dt><dd>IMPORTANT: This function needs to be implemented with the Keystore of choice and its .find_signing_key() and .sign() functions</dd></dl>
 <p>This function also takes care of the hashing, before signing, depending on the key type. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">uuid</td><td>The uuid of the sender to identify the correct key pair </td></tr>
@@ -210,7 +210,7 @@ Inheritance diagram for Proto:</div>
 </div><div class="memdoc">
 
 <p>Verify the message. </p>
-<p>IMPORTANT: This function needs to be implemented with the Keystore of choice and its .find_verifying_key() and .verify() functions</p>
+<dl class="section note"><dt>Note</dt><dd>IMPORTANT: This function needs to be implemented with the Keystore of choice and its .find_verifying_key() and .verify() functions</dd></dl>
 <p>Throws exception if not verifiable. This function also takes care of the hashing, before verifying, depending on the key type. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">uuid</td><td>The uuid of the sender to identify the correct key pair </td></tr>
