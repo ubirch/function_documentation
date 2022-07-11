@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['register_5fidentity_87',['register_identity',['../classubirch_1_1ubirch__api_1_1_a_p_i.html#acff06c147a69d3668eaeafdebc10172e',1,'ubirch::ubirch_api::API']]],
-  ['reset_5fsignature_88',['reset_signature',['../classubirch_1_1ubirch__protocol_1_1_protocol.html#a68b703f92c3045dcc4a0598222f1e42f',1,'ubirch::ubirch_protocol::Protocol']]]
+  ['message_5fchained_87',['message_chained',['../classubirch_1_1ubirch__protocol_1_1_protocol.html#a65fcf59974e9c05bb43948e853b1b491',1,'ubirch::ubirch_protocol::Protocol']]],
+  ['message_5fsigned_88',['message_signed',['../classubirch_1_1ubirch__protocol_1_1_protocol.html#a93a21b767b672a375265c6e04a09f5a0',1,'ubirch::ubirch_protocol::Protocol']]]
 ];
