@@ -374,6 +374,44 @@ Inheritance diagram for Protocol:</div>
 
 </div>
 </div>
+<a id="ac8329f9274da7a79fb82edf6b6ea1e0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8329f9274da7a79fb82edf6b6ea1e0e">&#9670;&nbsp;</a></span>keyreg_jsonstr_signed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> str keyreg_jsonstr_signed </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UUID&#160;</td>
+          <td class="paramname"><em>uuid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">dict&#160;</td>
+          <td class="paramname"><em>keyinfo_dict</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">Takes a keyinfo-json-str and embeds into a signed json keyreg message.
+:param uuid: the uuid of the device the keyinfo belongs to
+:param keyinfo_dict: the public key info object
+:return: the keyreg json as string
+</pre> 
+</div>
+</div>
 <a id="a65fcf59974e9c05bb43948e853b1b491"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a65fcf59974e9c05bb43948e853b1b491">&#9670;&nbsp;</a></span>message_chained()</h2>
 
