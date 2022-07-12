@@ -3,7 +3,7 @@ var indexSectionsWithContent =
   0: "_acdefgikmprstuv",
   1: "aekp",
   2: "gu",
-  3: "_cdefgikmrstuv",
+  3: "_cdefgimrstuv",
   4: "f"
 };
 
