@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['trust_5fidentity_5fjson_94',['trust_identity_json',['../classubirch_1_1ubirch__api_1_1_a_p_i.html#a7533482bdfa535b9ac3831e8d5d0686a',1,'ubirch::ubirch_api::API']]]
+  ['unpack_5fupp_89',['unpack_upp',['../classubirch_1_1ubirch__protocol_1_1_protocol.html#a51f1e148e74ff11e0ca673ebc801f759',1,'ubirch::ubirch_protocol::Protocol']]],
+  ['upp_5fmsgpack_5fsplit_5fsignature_90',['upp_msgpack_split_signature',['../classubirch_1_1ubirch__protocol_1_1_protocol.html#a090ba826e353a22f9930d723da0b8853',1,'ubirch::ubirch_protocol::Protocol']]]
 ];

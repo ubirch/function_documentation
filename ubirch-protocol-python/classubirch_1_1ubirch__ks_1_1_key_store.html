@@ -99,8 +99,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Handles your signing and verifying keys. </p>
-<p>Meaning it generates, stores, loads and finds your keys. </p>
+<div class="textblock"><p>The ubirch key store handles the cryptographic keys, which are used for signing and verifying in the ubirch protocol. </p>
 </div><div class="dynheader">
 Inheritance diagram for KeyStore:</div>
 <div class="dyncontent">
@@ -140,7 +139,7 @@ Inheritance diagram for KeyStore:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Initialize the <a class="el" href="classubirch_1_1ubirch__ks_1_1_key_store.html" title="Handles your signing and verifying keys.">KeyStore</a>. </p>
+<p>Initialize the <a class="el" href="classubirch_1_1ubirch__ks_1_1_key_store.html" title="The ubirch key store handles the cryptographic keys, which are used for signing and verifying in the ...">KeyStore</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">keystore_file</td><td>The name of the keystore file </td></tr>
@@ -269,7 +268,7 @@ Inheritance diagram for KeyStore:</div>
   <table class="params">
     <tr><td class="paramname">uuid</td><td>The UUID of the device </td></tr>
     <tr><td class="paramname">curve</td><td>The used curve as well as the used hash function have to be explicitly set here to ensure determinism when creating the key </td></tr>
-    <tr><td class="paramname">hashfunc</td><td></td></tr>
+    <tr><td class="paramname">hashfunc</td><td>The default hash function that will be used for signing and verifying, needs to implement the same interface as hashlib.sha1 </td></tr>
   </table>
   </dd>
 </dl>

@@ -99,7 +99,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Ubirch <a class="el" href="classubirch_1_1ubirch__protocol_1_1_protocol.html" title="Ubirch Protocol: handle signatures and UPP&#39;s and create message objects.">Protocol</a>: handle signatures and UPP's and create message objects. </p>
+<div class="textblock"><p>Implementation of the UBIRCH protocol for the creation and verification of signed or chained UPPs (Ubirch <a class="el" href="classubirch_1_1ubirch__protocol_1_1_protocol.html" title="Implementation of the UBIRCH protocol for the creation and verification of signed or chained UPPs (Ub...">Protocol</a> Packages) </p>
 </div><div class="dynheader">
 Inheritance diagram for Protocol:</div>
 <div class="dyncontent">
@@ -233,17 +233,16 @@ Inheritance diagram for Protocol:</div>
 </div><div class="memdoc">
 
 <p>Sign the request when finished. </p>
-<dl class="section note"><dt>Note</dt><dd>IMPORTANT: This function needs to be implemented with the Keystore of choice and its .find_signing_key() and .sign() functions</dd></dl>
-<p>This function also takes care of the hashing, before signing, depending on the key type. </p><dl class="params"><dt>Parameters</dt><dd>
+<dl class="section note"><dt>Note</dt><dd>IMPORTANT: This function needs to be implemented by the user. It needs to be able to load a signing key, related to a specific <code>uuid</code>, i.e. <code>.find_signing_key()</code> and to sign the <code>message</code> with returning the binary signature, i.e. <code>.sign()</code> <br  />
+ The implementation of this method should take care of hashing the message before signing, if defined for the signing algorithm.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">uuid</td><td>The uuid of the sender to identify the correct key pair </td></tr>
     <tr><td class="paramname">message</td><td>The bytes to sign </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>NotImplementedError </dd></dl>
-
-<p>Reimplemented in <a class="el" href="class_step_by_step_example_1_1_proto.html#a5424233c477f4853d876035180cc6e8d">Proto</a>.</p>
+<dl class="section return"><dt>Returns</dt><dd>the signature </dd></dl>
 
 </div>
 </div>
@@ -294,8 +293,9 @@ Inheritance diagram for Protocol:</div>
 </div><div class="memdoc">
 
 <p>Verify the message. </p>
-<dl class="section note"><dt>Note</dt><dd>IMPORTANT: This function needs to be implemented with the Keystore of choice and its .find_verifying_key() and .verify() functions</dd></dl>
-<p>Throws exception if not verifiable. This function also takes care of the hashing, before verifying, depending on the key type. </p><dl class="params"><dt>Parameters</dt><dd>
+<dl class="section note"><dt>Note</dt><dd>IMPORTANT: This function needs to be implemented by the user. It needs to be able to load a verifying key, related to the <code>uuid</code>, i.e. <code>.find_verifying_key()</code> and to verify the <code>signature</code> of the <code>message</code>, i.e. <code>.verify()</code> The implementation of this method should take care of hashing the message before verifying, if defined for the verifying algorithm.</dd></dl>
+<p>Throws exception if not verifiable.</p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">uuid</td><td>The uuid of the sender to identify the correct key pair </td></tr>
     <tr><td class="paramname">message</td><td>The message bytes to verify </td></tr>
@@ -303,9 +303,7 @@ Inheritance diagram for Protocol:</div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>NotImplementedError </dd></dl>
-
-<p>Reimplemented in <a class="el" href="class_step_by_step_example_1_1_proto.html#a870696bebfb47dc9553db2f3944949da">Proto</a>.</p>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
 
 </div>
 </div>
@@ -405,10 +403,11 @@ Inheritance diagram for Protocol:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Takes a keyinfo-json-str and embeds into a signed json keyreg message. </p>
-<p>:param uuid: the uuid of the device the keyinfo belongs to :param keyinfo_dict: the public key info object :return: the keyreg json as string </p>
-
+<pre class="fragment">Create a signed key registration message, from a keyinfo dictionary.
+@param uuid the uuid of the device the keyinfo belongs to
+@param keyinfo_dict the public key info object
+@return the keyreg json as string
+</pre> 
 </div>
 </div>
 <a id="a65fcf59974e9c05bb43948e853b1b491"></a>
@@ -698,15 +697,15 @@ Inheritance diagram for Protocol:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Verify the integrity of the message and decode the contents Raises an value error when the message is too short. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>Verify a signed UPP message. </p>
+<p>Raises a value error, if the message is too short </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">uuid</td><td>The uuid of the sender of the message </td></tr>
+    <tr><td class="paramname">uuid</td><td>The uuid, related to the verifying key </td></tr>
     <tr><td class="paramname">msgpackUPP</td><td>The msgpack encoded message </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The decoded message </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>verification success </dd></dl>
 
 </div>
 </div>

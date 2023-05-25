@@ -143,7 +143,7 @@ Inheritance diagram for API:</div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">env</td><td>Can be one of [prod, demo, dev] </td></tr>
-    <tr><td class="paramname">debug</td><td>Print debug output? </td></tr>
+    <tr><td class="paramname">debug</td><td>Print debug output for HTTP connection </td></tr>
   </table>
   </dd>
 </dl>
@@ -181,43 +181,6 @@ Inheritance diagram for API:</div>
 <p>Deletes the public key. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">key_deregistration</td><td>The public key signed </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The response from the server </dd></dl>
-
-</div>
-</div>
-<a id="a50ac935f811739cb2c4141e0631f75b7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a50ac935f811739cb2c4141e0631f75b7">&#9670;&nbsp;</a></span>get_trusted_identities_json()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"> Response get_trusted_identities_json </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>self</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">dict&#160;</td>
-          <td class="paramname"><em>get_trusted</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get the trusted identities as a list in JSON format. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">get_trusted</td><td>Dictionary containing the identity details </td></tr>
   </table>
   </dd>
 </dl>
@@ -460,43 +423,6 @@ Inheritance diagram for API:</div>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="a7533482bdfa535b9ac3831e8d5d0686a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7533482bdfa535b9ac3831e8d5d0686a">&#9670;&nbsp;</a></span>trust_identity_json()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"> Response trust_identity_json </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>self</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">dict&#160;</td>
-          <td class="paramname"><em>signed_trust</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Trust a new identity. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">signed_trust</td><td>Dictionary containing the identity details </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The response from the server </dd></dl>
 
 </div>
 </div>
