@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['register_5fidentity_37',['register_identity',['../classubirch_1_1ubirch__api_1_1_a_p_i.html#acff06c147a69d3668eaeafdebc10172e',1,'ubirch::ubirch_api::API']]],
-  ['reset_5fsignature_38',['reset_signature',['../classubirch_1_1ubirch__protocol_1_1_protocol.html#a68b703f92c3045dcc4a0598222f1e42f',1,'ubirch::ubirch_protocol::Protocol']]]
+  ['persist_5fsignatures_36',['persist_signatures',['../class_step_by_step_example_1_1_proto.html#a93356edf6784a0cf94bba899892ba74b',1,'StepByStepExample::Proto']]],
+  ['proto_37',['Proto',['../class_step_by_step_example_1_1_proto.html',1,'StepByStepExample']]],
+  ['protocol_38',['Protocol',['../classubirch_1_1ubirch__protocol_1_1_protocol.html',1,'ubirch::ubirch_protocol']]]
 ];

@@ -1,9 +1,7 @@
 var searchData=
 [
-  ['ubirch_5fapi_2epy_43',['ubirch_api.py',['../ubirch__api_8py.html',1,'']]],
-  ['ubirch_5fbackend_5fkeys_2epy_44',['ubirch_backend_keys.py',['../ubirch__backend__keys_8py.html',1,'']]],
-  ['ubirch_5fks_2epy_45',['ubirch_ks.py',['../ubirch__ks_8py.html',1,'']]],
-  ['ubirch_5fprotocol_2epy_46',['ubirch_protocol.py',['../ubirch__protocol_8py.html',1,'']]],
-  ['unpack_5fupp_47',['unpack_upp',['../classubirch_1_1ubirch__protocol_1_1_protocol.html#a51f1e148e74ff11e0ca673ebc801f759',1,'ubirch::ubirch_protocol::Protocol']]],
-  ['upp_5fmsgpack_5fsplit_5fsignature_48',['upp_msgpack_split_signature',['../classubirch_1_1ubirch__protocol_1_1_protocol.html#a090ba826e353a22f9930d723da0b8853',1,'ubirch::ubirch_protocol::Protocol']]]
+  ['send_41',['send',['../classubirch_1_1ubirch__api_1_1_a_p_i.html#a895c5fa20714752fb4abe892d10244bb',1,'ubirch::ubirch_api::API']]],
+  ['send_5fdata_42',['send_data',['../classubirch_1_1ubirch__api_1_1_a_p_i.html#a6d83a4ef881d7e5c9353d28e7a41141b',1,'ubirch::ubirch_api::API']]],
+  ['set_5fauthentication_43',['set_authentication',['../classubirch_1_1ubirch__api_1_1_a_p_i.html#a19dfe22c5e75066156588808941aa067',1,'ubirch::ubirch_api::API']]],
+  ['set_5fsaved_5fsignatures_44',['set_saved_signatures',['../classubirch_1_1ubirch__protocol_1_1_protocol.html#aaa05ad2f58840ad3afc44fd58dd198fe',1,'ubirch::ubirch_protocol::Protocol']]]
 ];

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['unpack_5fupp_97',['unpack_upp',['../classubirch_1_1ubirch__protocol_1_1_protocol.html#a51f1e148e74ff11e0ca673ebc801f759',1,'ubirch::ubirch_protocol::Protocol']]],
-  ['upp_5fmsgpack_5fsplit_5fsignature_98',['upp_msgpack_split_signature',['../classubirch_1_1ubirch__protocol_1_1_protocol.html#a090ba826e353a22f9930d723da0b8853',1,'ubirch::ubirch_protocol::Protocol']]]
+  ['register_5fidentity_95',['register_identity',['../classubirch_1_1ubirch__api_1_1_a_p_i.html#acff06c147a69d3668eaeafdebc10172e',1,'ubirch::ubirch_api::API']]],
+  ['reset_5fsignature_96',['reset_signature',['../classubirch_1_1ubirch__protocol_1_1_protocol.html#a68b703f92c3045dcc4a0598222f1e42f',1,'ubirch::ubirch_protocol::Protocol']]]
 ];

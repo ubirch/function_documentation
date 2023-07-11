@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['proto_35',['Proto',['../class_step_by_step_example_1_1_proto.html',1,'StepByStepExample']]],
-  ['protocol_36',['Protocol',['../classubirch_1_1ubirch__protocol_1_1_protocol.html',1,'ubirch::ubirch_protocol']]]
+  ['message_5fchained_34',['message_chained',['../classubirch_1_1ubirch__protocol_1_1_protocol.html#a65fcf59974e9c05bb43948e853b1b491',1,'ubirch::ubirch_protocol::Protocol']]],
+  ['message_5fsigned_35',['message_signed',['../classubirch_1_1ubirch__protocol_1_1_protocol.html#a93a21b767b672a375265c6e04a09f5a0',1,'ubirch::ubirch_protocol::Protocol']]]
 ];
