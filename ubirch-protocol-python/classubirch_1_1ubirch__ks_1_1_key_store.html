@@ -313,80 +313,6 @@ Inheritance diagram for KeyStore:</div>
 
 </div>
 </div>
-<a id="a225ce040e458f5ca5deaaa39319337e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a225ce040e458f5ca5deaaa39319337e6">&#9670;&nbsp;</a></span>delete_ecdsa_verifying_key()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"> bool delete_ecdsa_verifying_key </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>self</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">UUID&#160;</td>
-          <td class="paramname"><em>uuid</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Delete the ecdsa verifying key for this UUID. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">uuid</td><td>The UUID of the device </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if the key was deleted, False if no key was found. </dd></dl>
-
-</div>
-</div>
-<a id="a977a6de4d52da0fae1de5bac2a20a284"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a977a6de4d52da0fae1de5bac2a20a284">&#9670;&nbsp;</a></span>delete_ed25519_verifying_key()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"> bool delete_ed25519_verifying_key </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>self</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">UUID&#160;</td>
-          <td class="paramname"><em>uuid</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Delete the ed25519 verifying key for this UUID. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">uuid</td><td>The UUID of the device </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if the key was deleted, False if no key was found. </dd></dl>
-
-</div>
-</div>
 <a id="a3325db3146fadca852a1c2396918fd11"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3325db3146fadca852a1c2396918fd11">&#9670;&nbsp;</a></span>delete_signing_key()</h2>
 
@@ -414,6 +340,43 @@ Inheritance diagram for KeyStore:</div>
 </div><div class="memdoc">
 
 <p>Delete the ed25519/ecdsa signing key for this UUID. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">uuid</td><td>The UUID of the device </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the key was deleted, False if no key was found. </dd></dl>
+
+</div>
+</div>
+<a id="afb9888577770a31ab70b9f67cea4c2a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb9888577770a31ab70b9f67cea4c2a7">&#9670;&nbsp;</a></span>delete_verifying_key()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> bool delete_verifying_key </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UUID&#160;</td>
+          <td class="paramname"><em>uuid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Delete the ecdsa/ed25519 verifying key for this UUID. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">uuid</td><td>The UUID of the device </td></tr>
