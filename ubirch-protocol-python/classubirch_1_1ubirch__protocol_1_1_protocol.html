@@ -234,7 +234,7 @@ Inheritance diagram for Protocol:</div>
 
 <p>Sign the request when finished. </p>
 <dl class="section note"><dt>Note</dt><dd>IMPORTANT: This function needs to be implemented by the user. It needs to be able to load a signing key, related to a specific <code>uuid</code>, i.e. <code>.find_signing_key()</code> and to sign the <code>message</code> with returning the binary signature, i.e. <code>.sign()</code> <br  />
- The implementation of this method should take care of hashing the message before signing, if defined for the signing algorithm.</dd></dl>
+ <b>The implementation of this method needs to take care of hashing the message before signing, if defined for the signing algorithm.</b></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">uuid</td><td>The uuid of the sender to identify the correct key pair </td></tr>
@@ -293,7 +293,7 @@ Inheritance diagram for Protocol:</div>
 </div><div class="memdoc">
 
 <p>Verify the message. </p>
-<dl class="section note"><dt>Note</dt><dd>IMPORTANT: This function needs to be implemented by the user. It needs to be able to load a verifying key, related to the <code>uuid</code>, i.e. <code>.find_verifying_key()</code> and to verify the <code>signature</code> of the <code>message</code>, i.e. <code>.verify()</code> The implementation of this method should take care of hashing the message before verifying, if defined for the verifying algorithm.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>IMPORTANT: This function needs to be implemented by the user. It needs to be able to load a verifying key, related to the <code>uuid</code>, i.e. <code>.find_verifying_key()</code> and to verify the <code>signature</code> of the <code>message</code>, i.e. <code>.verify()</code> ** The implementation of this method needs to take care of hashing the message before verifying, if defined for the verifying algorithm.**</dd></dl>
 <p>Throws exception if not verifiable.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
